@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>notedu</title>
+    <!--Links-->
+    <link rel="shortcut icon" href="./img/githubprofileico.ico" type="image/x-icon">
+
+    <!---->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                colors: {
+                    'orange':'#ff4500',
+                    'blue': '#1e90ff',
+                    'yellow': '#f2f20f',
+                    'white': 'white',
+                    'black': 'black',
+                }
+            }
+        }
+    </script>
+    <!---->
+</head>
+<body class="text-white bg-black">
+    <header class="flex flex-row justify-around items-center m-3 flex-wrap">
+        <div class="flex items-center gap-6">
+            <img class="rounded-3xl" src="./img/githubprofile.png" alt="notedu | Github Profile" width="108px" height="108px">
+            <h1 class="text-3xl">Olá, sou Eduardo Lima👋</h1>
+        </div>
+        <div>
+            <a class="uppercase border-solid border-white border-2 rounded-2xl pt-3 pl-5 pr-5 pb-3 duration-75 hover:rounded-xl" href="#">github</a>
+        </div>
+    </header>
+    <section class="flex justify-center pt-52">
+        <p class="text-center text-2xl">
+            Desenvolvedor Web iniciando sua carreira no Front-End
+            <br>Atualmente estudando <span class="text-orange">HTML</span>, <span class="text-blue">CSS</span> e <span class="text-yellow">JAVASCRIPT</span>🍃
+        </p>
+    </section>
+</body>
+</html>
