@@ -3,42 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>notedu</title>
+    <title>About me | notedu</title>
     <!--Links-->
     <link rel="shortcut icon" href="./img/githubprofileico.ico" type="image/x-icon">
-
     <!---->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                colors: {
-                    'orange':'#ff4500',
-                    'blue': '#1e90ff',
-                    'yellow': '#f2f20f',
-                    'white': 'white',
-                    'black': 'black',
-                }
-            }
-        }
-    </script>
     <!---->
 </head>
 <body class="text-white bg-black">
-    <header class="flex flex-row justify-around items-center m-3 flex-wrap">
-        <div class="flex items-center gap-6">
-            <img class="rounded-3xl" src="./img/githubprofile.png" alt="notedu | Github Profile" width="108px" height="108px">
+    <header class="flex justify-around items-center m-6 flex-wrap">
+        <div class="flex flex-col md:flex-row gap-3 items-center">
+            <img class="rounded-3xl border-solid border-2" src="./img/githubprofile.png" alt="Github Profile | notedu" width="108px" height="108px">
             <h1 class="text-3xl">Olá, sou Eduardo Lima👋</h1>
         </div>
-        <div>
-            <a class="uppercase border-solid border-white border-2 rounded-2xl pt-3 pl-5 pr-5 pb-3 duration-75 hover:rounded-xl" href="#">github</a>
-        </div>
+        <nav class="flex items-center gap-9">
+            <a class="mt-7 md:m-0" href="https://github.com/notedu"><img src="./img/github.png" alt="Github | image" width="48px" height="48px"></a>
+        </nav>
     </header>
-    <section class="flex justify-center pt-52">
-        <p class="text-center text-2xl">
-            Desenvolvedor Web iniciando sua carreira no Front-End
-            <br>Atualmente estudando <span class="text-orange">HTML</span>, <span class="text-blue">CSS</span> e <span class="text-yellow">JAVASCRIPT</span>🍃
+    <main class="mt-36 text-center">
+        <p class="text-3xl">
+            Desenvolvedor <span class="text-green-600">Front-End</span> iniciante
+            <br>Atualmente estudando:
         </p>
-    </section>
+        <div class="m-5 text-xl flex flex-wrap md:flex-nowrap justify-center gap-10 items-center ">
+            <div class="border-solid border-2 p-5 rounded bg-orange-600 text-black">
+                <img class="object-center" src="./img/html-5.png" alt="HTML 5 | image" width="64px" height="64px">
+                <h2 class="mt-5 font-mono text-2xl">HTML</h2>
+                <p>Hypertext Markup Language, ou Linguagem de Marcação e Hipertexto. Considerada o primeiro aprendizado e base para criação de sites.</p>
+            </div>
+            <div class="border-solid border-2 p-5 rounded bg-sky-600 text-black">
+                <img src="./img/css-3.png" alt="CSS 3 | image" width="64px" height="64px">
+                <h2 class="mt-5 font-mono text-2xl">CSS</h2>
+                <p>Cascading Style Sheet. Pode se considerar a estilização do seu site, adicionando cores, formatos e animações.</p>
+            </div>
+            <div class="border-solid border-2 p-5 rounded bg-yellow-400 text-black">
+                <img src="./img/js.png" alt="Javascript | image" width="64px" height="64px">
+                <h2 class="mt-5 uppercase font-mono text-2xl">Javascript</h2>
+                <p>Linguagem de programação. A parte funcional do site, ou como diz o próprio termo, a parte onde programa o site.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
